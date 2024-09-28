@@ -16,19 +16,19 @@ See this youtube video: https://www.youtube.com/watch?v=En5rnbmX7U8
 
 See this youtube video: https://www.youtube.com/watch?v=Fxflt0v2Mfc
 
-## 4. Install AWS CLI
+## 4. Install AWS CLI and Configure AWS Account
+
+See this youtube video: https://www.youtube.com/watch?v=u0JyzUGzvJA
+
+## 5. Create a new Blazor Web Application with Visual Studio 2022 Community Edition
 
 
 
-
-## 5. Configure AWS Account
-
+## 6. Create a new Razor Component for creating AWS S3 Bucket  
 
 
 
-## 6. 
-
-
+## 7. 
 
 
 
