@@ -218,4 +218,7 @@ Add this code for creating a new **NavLink** to access the new Component:
 
 ![image](https://github.com/user-attachments/assets/9c924ca2-3acd-4f69-94c5-4f8098027bc1)
 
+We confirme in AWS Console the new S3 bucket was successfully created 
+
+![image](https://github.com/user-attachments/assets/50c87fab-7b6b-45ba-8549-865d23ad0ec3)
 
