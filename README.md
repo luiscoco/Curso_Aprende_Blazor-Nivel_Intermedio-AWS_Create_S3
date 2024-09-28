@@ -22,12 +22,35 @@ See this youtube video: https://www.youtube.com/watch?v=u0JyzUGzvJA
 
 ## 5. Create a new Blazor Web Application with Visual Studio 2022 Community Edition
 
+Run Visual Studio 2022 and create a new project
+
+![image](https://github.com/user-attachments/assets/9a56950f-ee95-46d1-a6fe-8933d254956f)
+
+Search for Blazor project templates and select Blazor Web App
+
+![image](https://github.com/user-attachments/assets/3b29e69e-81d7-4b22-8526-96d0e4d81036)
+
+Input the project name and the location in the hard disk
+
+![image](https://github.com/user-attachments/assets/356021e5-8ed9-41b1-a0c8-2f47a94d338d)
+
+Leave all the default values in this page and press the Create button
+
+![image](https://github.com/user-attachments/assets/f72c99a2-8d22-4ee3-b837-c8d6e3fa957f)
+
+This is the new project folders and files structure
+
+![image](https://github.com/user-attachments/assets/c64d585b-8082-443c-9d17-fe52d52530c3)
 
 ## 6. Load the package with Nuget
 
-Load the 
+Load the AWSSDK dependency
 
-![image](https://github.com/user-attachments/assets/8ac06453-1c03-42e5-921d-f6180e85427f)
+![image](https://github.com/user-attachments/assets/bb306061-1a56-4dd6-b452-630d5e91a135)
+
+We confirm the new dependency was added in the Blazor application
+
+![image](https://github.com/user-attachments/assets/c78f6de6-13be-49f5-8624-5ee9c3f28959)
 
 ## 7. Create a new Razor Component for creating AWS S3 Bucket  
 
