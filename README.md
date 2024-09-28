@@ -208,7 +208,10 @@ Modify the NavMenu.razor compoent for creating a new NavLink for accessing to th
 
 ## 9. Run the application and verify with AWS Console the S3 Bucket was created
 
+![image](https://github.com/user-attachments/assets/c8277144-e817-4dd7-a22f-8504997b5f2a)
 
+![image](https://github.com/user-attachments/assets/b90b6e06-3079-4233-b2c0-30fe54a93c42)
 
+![image](https://github.com/user-attachments/assets/9c924ca2-3acd-4f69-94c5-4f8098027bc1)
 
 
