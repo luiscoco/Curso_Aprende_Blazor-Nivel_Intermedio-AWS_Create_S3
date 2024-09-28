@@ -28,7 +28,9 @@ See this youtube video: https://www.youtube.com/watch?v=u0JyzUGzvJA
 
 
 
-## 7. 
+## 7. Run the application and verify with AWS Console the S3 Bucket was created
+
+
 
 
 
