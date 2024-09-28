@@ -3,12 +3,31 @@
 @using Amazon.S3
 @using Amazon.S3.Model
 
-<h3>AzureServices</h3>
+<h3>Azure Services</h3>
+
+<label for="bucketNameInput">Enter S3 Bucket Name:</label>
+<input id="bucketNameInput" @bind="bucketName" placeholder="Bucket Name" />
+
+<p>Bucket Name: @bucketName</p>
 
 <button @onclick="CreateS3Bucket">Create S3 Bucket</button>
 
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    if (errorMessage == "The bucket was sucessfully created")
+    {
+        <p style="color:green">@errorMessage</p>
+    }
+    else 
+    { 
+        <p style="color:red">@errorMessage</p>
+    }
+}
+
 @code {
-    private IAmazonS3 _client;
+    private IAmazonS3? _client;
+    private string bucketName = "";
+    private string errorMessage = "";
 
     protected override async Task OnInitializedAsync()
     {
@@ -17,13 +36,34 @@
 
     private async Task CreateS3Bucket()
     {
-        var request = new PutBucketRequest
+        try
+        {
+            if (!string.IsNullOrWhiteSpace(bucketName))
             {
-                BucketName = "luiscoconrriquezbucket",
-                UseClientRegion = true,
-            };
+                var request = new PutBucketRequest
+                    {
+                        BucketName = bucketName,
+                        UseClientRegion = true,
+                    };
 
-        var response = await _client.PutBucketAsync(request);
-        // You can add logic to handle the response here if needed
+                var response = await _client.PutBucketAsync(request);
+                errorMessage = "The bucket was sucessfully created"; // Clear error message on success
+            }
+            else
+            {
+                errorMessage = "Bucket name cannot be empty.";
+            }
+        }
+        catch (AmazonS3Exception ex)
+        {
+            // AmazonS3Exception will catch specific S3 errors
+            errorMessage = $"Error creating S3 bucket: {ex.Message}";
+        }
+        catch (Exception ex)
+        {
+            // Catch any other general exceptions
+            errorMessage = $"An unexpected error occurred: {ex.Message}";
+        }
     }
 }
+
