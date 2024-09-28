@@ -196,7 +196,11 @@ If there is an error (either an AWS-specific AmazonS3Exception or any general ex
 
 ## 8. Create a new Menu item for Navigating to the new Razor Component
 
-Modify the NavMenu.razor compoent for creating a new NavLink for accessing to the new Component:
+Modify the **NavMenu.razor** compoent
+
+![image](https://github.com/user-attachments/assets/a6d7ff44-805f-4e0c-8aaf-017e068475a2)
+
+Add this code for creating a new **NavLink** to access the new Component:
 
 ```
 <div class="nav-item px-3">
