@@ -1,4 +1,4 @@
-using BlazorAzureSample.Components;
+using BlazorAWSSample.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
